@@ -1,0 +1,68 @@
+/* Award section home */
+.awards-carousel .owl-item{
+    padding: 20px 0;
+}
+.awards-carousel .owl-item .award-item-block {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 40px 30px;
+    text-align: center;
+    min-height: 300px;
+    opacity: .5;
+}
+.awards-carousel .owl-item.center .award-item-block {
+    box-shadow: 0px 4px 15px -6px rgb(0 0 0/55%);
+    opacity: 1;
+}
+.awards-carousel {
+    padding: 40px 30px;
+}
+.award-item-logo img {
+    max-width: 150px;
+    margin: auto;
+}
+.awards-carousel .owl-nav button {
+    position: absolute;
+    top: 50%;
+    width: max-content !important;
+    background-color: #fff !important;
+}
+.awards-carousel .owl-nav button:hover{
+    background: inherit !important;
+    color: inherit !important;
+}
+.awards-carousel .owl-nav button.owl-prev{
+    left: 0;
+}
+.awards-carousel .owl-nav button.owl-next{
+    right: 0;
+    left: auto;
+}
+.awards-carousel .owl-nav button span {
+    border: none;
+    font-size: 42px;
+    line-height: 1;
+    border-radius: 50%;
+    width: 45px;
+    display: block;
+    height: 45px;
+    box-shadow: 0px 2px 10px rgb(0 0 0/22%);
+}
+.awards-carousel .owl-nav button:hover span{
+    background: #000;
+    color: #fff;
+}
+
+@media (max-width: 375px) {
+    .awards-carousel {
+      padding: 40px 20px;
+    }
+    .awards-carousel .owl-item .award-item-block{
+      padding: 20px 10px;
+    }
+    .awards-carousel .owl-nav button span {
+      font-size: 32px;
+      width: 35px;
+      height: 35px;
+    }
+}

@@ -1,0 +1,63 @@
+/* Industries Services */
+.industries-services-section .specification-block{
+    display: flex;
+    gap: 10px;
+}
+.industries-services-section .specification-block svg {
+    font-size: 1.2rem;
+}
+.industries-services-section .heading4 {
+    font-size: 1.3rem;
+}
+/* Industries features slider */
+.industries-features-slider .industries_process_block{
+    background-color: #fff;
+    padding: 20px;
+}
+.industries-features-slider .industries_process_block:hover {
+    background-color: #f1f2fd;
+}
+.industries-features-slider .industries_process_block .process-icon{
+    color: #1050bc;
+    background: transparent;
+    width: 28px;
+    height: auto;
+}
+@media (max-width: 767px) {
+    .industries-services-section .specification-block{
+        padding: 10px 0;
+    }
+}
+/* Industries requirement section */
+.industries-requirement-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #000;
+}
+.industries-requirement-item:first-child {
+    padding-top: 0;
+}
+.industries-requirement-item .paragraph {
+    margin-bottom: 0;
+}
+.industries-requirement-image {
+    max-width: 70%;
+    margin: auto;
+    max-height: 600px;
+    height: 100%;
+}
+.industries-requirement-image img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+@media (max-width: 1199px) {
+    .industries-requirement-image{
+        max-width: 100%;
+    }
+}
+@media (max-width: 991px) {
+    .industries-requirement-image{
+        max-height: 450px;
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,6 @@
+/* magento development banner */
+.magento-development-banner{
+    background: url('../../../../public/assests/images/services/magento-development/magento-development-banner.webp');
+    background-size: cover;
+    background-position: center;
+}

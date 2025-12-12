@@ -1,0 +1,17 @@
+/* SEO Service banner */
+.seo-service-banner{
+    background: url('../../../../public/assests/images/services/seo/seo-banner.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/* SEO service faq */
+.seo-service-faq{
+    padding-top: 2rem;
+}
+.seo-service-faq .accordion-item .accordion-button {
+    padding: 0;
+}
+.seo-service-faq .accordion-body {
+    padding: 20px 20px 0 0;
+}

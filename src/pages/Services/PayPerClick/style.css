@@ -1,0 +1,6 @@
+/* ppc service banner */
+.ppc-service-banner{
+    background: url('../../../../public/assests/images/services/ppc-services/ppc-service-banner.webp');
+    background-size: cover;
+    background-position: center;
+}

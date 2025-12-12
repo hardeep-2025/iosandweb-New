@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow: /?ref=producthunt
+Disallow: /?wmcAction=wmcTrack
+
+Sitemap: https://iosandweb.net/sitemap.xml

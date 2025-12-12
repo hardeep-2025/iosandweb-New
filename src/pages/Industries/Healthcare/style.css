@@ -1,0 +1,29 @@
+/* Industries service tab */
+.industries-services-tab {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.industries-services-tab .nav-link.active{
+    background-color: #1050bc;
+}
+.industries-services-tab .nav-link {
+    border: 1px solid #1050bc;
+    color: #1050bc;
+}
+.industries-services-tab .nav-link:hover {
+    background-color: #1050bc;
+    color: #fff;
+}
+/* Industries consult section */
+.industries-consult-div {
+    background: url('../../../../public/assests/images//industries/healthcare/industries-consult.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    border-radius: 30px;
+}
+/* Tools and languages section */
+.tools-tab-text{
+    margin-top: 4rem;
+}

@@ -1,0 +1,6 @@
+/* shopify development banner */
+.shopify-development-banner{
+    background: url('../../../../public/assests/images/services/shopify-development/shopify-development-banner.webp');
+    background-size: cover;
+    background-position: center top;
+}

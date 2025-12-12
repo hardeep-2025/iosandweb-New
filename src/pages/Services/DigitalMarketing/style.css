@@ -1,0 +1,6 @@
+/* Digital marketing banner */
+.digital-marketing-banner{
+    background: url('../../../../public/assests/images/services/digital-marketing/digital-marketing-banner.webp');
+    background-size: cover;
+    background-position: center;
+}

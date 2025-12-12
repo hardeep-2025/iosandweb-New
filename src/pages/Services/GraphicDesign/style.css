@@ -1,0 +1,6 @@
+/* Graphic Design Banner */
+.graphic-design-banner{
+    background: url('../../../../public/assests/images/services/graphic-design/graphic-design-banner.webp');
+    background-size: cover;
+    background-position: center;
+}

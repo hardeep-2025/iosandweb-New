@@ -1,0 +1,6 @@
+/* B2B Lead Generation Campaign banner */
+.b2b-lead-generation-banner{
+    background: url('../../../../public/assests/images/services/b2b-lead-generation/b2b-lead-generation-banner.webp');
+    background-size: cover;
+    background-position: center;
+}

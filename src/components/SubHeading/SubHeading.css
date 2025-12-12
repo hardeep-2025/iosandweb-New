@@ -1,0 +1,13 @@
+.heading_sub {
+    margin: 0;
+    color: var(--color-gray);
+    font-family: var(--font-poppins-sembold);
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+}
+.heading_sub .star_icon {
+    width: 38px;
+}

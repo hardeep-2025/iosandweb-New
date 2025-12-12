@@ -1,0 +1,6 @@
+/* PDF to HTML Banner */
+.pdf-to-html-banner{
+    background: url('../../../../public/assests/images/services/pdf-to-html/pdf-to-html-banner.webp');
+    background-size: cover;
+    background-position: center;
+}

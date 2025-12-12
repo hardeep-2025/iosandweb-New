@@ -1,0 +1,17 @@
+.blog_details_form {
+    padding: 2rem;
+    border: 1px solid #BCBCBC;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+.blog_details_form_section .blog_details_form .form-group .form-control {
+    border: 1px solid #BCBCBC;
+}
+.blog_details_form_section .blog_details_form .form-col {
+    padding: 12px;
+}
+@media (max-width: 480px) {
+    .blog_details_form {
+        padding: 1rem;
+    }
+}

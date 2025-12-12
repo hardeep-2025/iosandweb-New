@@ -1,0 +1,6 @@
+/* CRM Development HealthCare Banner */
+.crm-development-healthcare-banner{
+    background: url('../../../../public/assests/images/services/crm-development-healthcare/crm-development-healthcare-banner.webp');
+    background-size: cover;
+    background-position: center;
+}

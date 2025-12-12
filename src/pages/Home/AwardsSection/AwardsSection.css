@@ -1,0 +1,19 @@
+.awards_section {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    color: var(--color-black);
+    padding: 3rem 2rem;
+    margin-top: -250px;
+}
+.award_list_item {
+    text-align: center;
+}
+.award_list_item .award_image {
+    max-width: 158px;
+    margin: auto;
+}
+@media (max-width: 575px) {
+    .awards_section {
+        padding: 2rem 1rem;
+    }
+}

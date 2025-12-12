@@ -1,0 +1,44 @@
+/* Career page */
+.career-banner{
+    background-color: #0d3577;
+}
+/* reasons to join */
+.reasons-join-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.reasons-join-item img.responsive-img {
+    width: 60px;
+}
+.reasons-join-item-content .paragraph {
+    margin: 0;
+}
+@media (max-width: 767px) {
+    .reasons-to-join .heading3,
+    .reasons-to-join .heading5{
+        text-align: center;
+    }
+}
+/* Job Positions */
+.job-positions-flex {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+.job-positions-flex .job-positions-item {
+    display: flex;
+    gap: 20px;
+    flex: 1 0 30%;
+}
+.job-position-content p {
+    margin: 0;
+}
+.job-positions-flex .job-positions-item svg {
+    font-size: 40px;
+    width: 50px;
+}

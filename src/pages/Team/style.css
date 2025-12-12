@@ -1,0 +1,74 @@
+/* Team page */
+.our-team-banner{
+    background-color: #000;
+}
+
+/* Our team section */
+.team-grid-row {
+    grid-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 5rem 0 0;
+}
+.team-grid-row .team-item {
+    text-align: center;
+    padding: 15px 0;
+}
+.team-profile-image {
+    margin: auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 15px -6px rgb(0 0 0/55%);
+}
+.team-profile-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #f1f2fd;
+    object-position: top;
+}
+.team-grid-row .team-item .profile-content {
+    padding-top: 20px;
+}
+.team-grid-row .team-item .team-title{
+    margin-bottom: 0;
+    font-size: 24px;
+}
+.team-grid-row .team-item .profile-content .paragraph {
+    margin: 10px 0;
+}
+.team-grid-row .team-item .profile-content .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.team-grid-row .team-item .profile-content .social-icons a {
+    color: #1050bc;
+    font-size: 20px;
+}
+.team-grid-row .team-item .profile-content .social-icons a:hover{
+    color: #000;
+}
+
+@media (max-width: 1199px) {
+    .team-grid-row {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width: 767px) {
+    .team-grid-row {
+        grid-template-columns: repeat(2,1fr);
+        padding: 2rem 0 0;
+    }
+}
+@media (max-width: 480px) {
+    .team-grid-row {
+        grid-template-columns: repeat(1,1fr);
+    }
+}

@@ -1,0 +1,46 @@
+/* Join team section about page */
+.display-flex{
+    display: flex;
+    align-items: stretch;
+}
+.image-wrap {
+    max-width: 100%;
+    flex: 1;
+}
+.image-wrap+.image-wrap {
+    margin-left: 12px;
+}
+.image-wrap img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.image-wrap-inner {
+    width: calc(100% - 7px);
+}
+.image-wrap-inner+.image-wrap-inner {
+    margin-top: 12px;
+}
+.image-wrap-inner img {
+    max-height: 280px;
+}
+.btn-section .btn.btn-blue {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    background: #1050bc;
+    padding: 20px 40px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+@media (max-width: 767px) {
+    .apply-btn.btn-section {
+      margin-bottom: 40px;
+    }
+}
+@media (max-width: 480px) {
+    .btn-section .btn.btn-blue{
+      padding: 12px 30px;
+    }
+}

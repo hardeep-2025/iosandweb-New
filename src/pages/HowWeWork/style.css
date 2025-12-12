@@ -1,0 +1,40 @@
+/* how we work page */
+.how-we-work-banner{
+    background-color: #000;
+}
+.subheading {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+  
+/* Briefing section */
+.section-less-padding{
+    padding: 60px 0;
+}
+.how-we-work-lists {
+    list-style: none;
+    padding: 0;
+}
+.how-we-work-lists li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 20px;
+}
+.how-we-work-lists li::before {
+    width: 15px;
+    height: 15px;
+    content: "";
+    position: absolute;
+    border: solid 3px #212529;
+    background-color: transparent;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+@media (max-width: 991px){
+    .row-reverse-mobile{
+      flex-direction: column-reverse;
+    }
+}

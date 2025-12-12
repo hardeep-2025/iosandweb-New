@@ -1,0 +1,109 @@
+/* Development process section */
+.dots-container {
+    display: flex;
+    flex-direction: column;
+}
+.dots-container .owl-dot {
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    color: #8e9299 !important;
+    font-size: 18px;
+    text-align: left;
+    padding: 0 0 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    position: relative;
+}
+.dots-container .owl-dot .planning-image-wrap {
+    border: 2px solid #8e9299;
+    padding: 15px;
+    border-radius: 50%;
+    z-index: -1;
+}
+.dots-container .owl-dot .planning-image-wrap::after {
+    content: "";
+    width: 2px;
+    height: 30px;
+    position: absolute;
+    background: #8e9299;
+    z-index: -1;
+    bottom: 0;
+    left: 36px;
+}
+.dots-container .owl-dot:last-child .planning-image-wrap::after{
+    display: none;
+}
+.dots-container .owl-dot:last-child{
+    padding-bottom: 0;
+}
+.dots-container .owl-dot .planning-image-wrap img {
+    width: 40px;
+    object-fit: contain;
+    filter: brightness(0.5);
+}
+.dots-container .owl-dot.active {
+    color: #000 !important;
+}
+.dots-container .owl-dot.active .planning-image-wrap {
+    border-color: #1050bc;
+    background-color: #1050bc;
+}
+.dots-container .owl-dot.active .planning-image-wrap img {
+    filter: brightness(100%);
+}
+.development-process-block .item{
+    position: relative;
+}
+.development-process-block .process-image{
+    width: 100%;
+    border-radius: 5px;
+}
+.development-process-block .item .process-content {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 1.5px;
+    background-color: #fff;
+    padding: 30px;
+    width: 400px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+.development-process-block .item .process-content .heading5{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.development-process-block .item .process-content .paragraph{
+    margin-top: 0;
+}
+@media (max-width: 991px) {
+    .dots-container .owl-dot span{
+      display: none;
+    }
+    .dots-container .owl-dot .planning-image-wrap{
+      display: block;
+      padding: 10px;
+    }
+    .dots-container .owl-dot .planning-image-wrap img{
+      width: 30px;
+    }
+    .dots-container .owl-dot .planning-image-wrap::after{
+      left: 26px;
+    }
+}
+@media (max-width: 767px) {
+    .development-process-block .item .process-content {
+      position: static;
+      width: 100%;
+      padding: 20px 0;
+    }
+}
+@media (max-width: 575px) {
+    .dots-container{
+      display: none;
+    }
+}

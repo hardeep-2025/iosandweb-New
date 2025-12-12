@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "title": "Vertical Brands",
+        "description": "Connecting digital experiences, creators and conversions, Vertical keep brands at the forefront of what's next to drive impact and sustainable growth.",
+        "url": "https://www.verticalbrands.co/",
+        "image": "/portfolioImages/vertical.webp"
+    },
+    {
+        "id": 2,
+        "title": "SRGN",
+        "description": "Best-in-class Cosmetic Surgery & Aesthetic Clinic designed to enhance your natural beauty",
+        "url": "https://www.srgn.co/",
+        "image": "/portfolioImages/srgn.webp"
+    },
+    {
+        "id": 3,
+        "title": "Aesthetic Intelligence",
+        "description": "The inception of Aesthetic Intelligence was driven by a patient-centric philosophy, emphasising the need for patients to receive care of the highest standard.",
+        "url": "https://www.aestheticintelligence.co.uk/",
+        "image": "/portfolioImages/aesthetic.webp"
+    },
+    {
+        "id": 4,
+        "title": "MyGermany",
+        "description": "MyGermany is the best Germany-based international shipping and forwarding company established in 2012 by two friends and headquartered in the middle of Germany, in Weimar.",
+        "url": "https://mygermany.com/",
+        "image": "/portfolioImages/mygermany.webp"
+    },
+    {
+        "id": 5,
+        "title": "Greystone",
+        "description": "Experience the unmatched quality and durability of American-made products and services for your commercial and industrial needs. Trust Greystone to provide top-of-the-line solutions made right here in the USA.",
+        "url": "https://www.greystonecs.us/",
+        "image": "/portfolioImages/greystonecs.webp"
+    },
+    {
+        "id": 6,
+        "title": "Dropshipper",
+        "description": "The Largest Dropshipping Portal - Your one-stop shop for wholesale. Quick View Electronics 3.5mm 4 Pole Female To Micro USB Male Angle Angled Adapter Active Clip Mic Microphone Cable Converter Cord.",
+        "url": "https://dropshipper.com/",
+        "image": "/portfolioImages/dropshipper.webp"
+    },
+    {
+        "id": 7,
+        "title": "Ten Spa",
+        "description": "World-class massage therapists provide an excellent spa experience tailored to the needs of our guests. With several years of experience, our therapists have carefully mastered their craft to provide the best massage services in Kuwait City.",
+        "url": "https://thetenworld.com/",
+        "image": "/portfolioImages/thetenworld.webp"
+    },
+    {
+        "id": 8,
+        "title": "Sprout",
+        "description": "Get counseling support at The Sprouts Singapore to empower and balance the lives of overwhelmed working women.",
+        "url": "https://thesprout.sg/",
+        "image": "/portfolioImages/thesprout.webp"
+    },
+    {
+        "id": 9,
+        "title": "Arrive-London Taxis",
+        "description": "Arrive is London's electric-only taxi app. That might be the cheapest, the quickest, a female driver or even one with an AUX that doesn't mind you drinking in the car.",
+        "url": "https://apps.apple.com/gb/app/arrive-london-taxis/id455670693",
+        "image": "/portfolioImages/arrive-london.webp"
+    },
+    {
+        "id": 10,
+        "title": "Astral Skin World",
+        "description": "Astral Skin World in Zirakpur, India, is dedicated to providing the most advanced solutions in skin care and cosmetic treatments.",
+        "url": "https://astralskinworld.com/",
+        "image": "/portfolioImages/astralskinworld.webp"
+    }
+]

@@ -1,0 +1,14 @@
+/* Join our team form */
+.join-our-team-form .form-col {
+    padding: 8px 12px;
+}
+.join-our-team-form .form-group .form-control {
+    padding: 0.7rem;
+    border: 1px solid #797d7e;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.join-our-team-form .form-submit-group {
+    text-align: center;
+    margin-top: 30px;
+}

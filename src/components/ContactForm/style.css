@@ -1,0 +1,36 @@
+/* contact form */
+.contact-form {
+    padding: 30px;
+    border-radius: 20px;
+    background: #fff;
+    color: #000;
+}
+.contact-form .form-group {
+    padding-bottom: 10px;
+}
+.contact-form .form-group .form-control {
+    padding: 0.8rem;
+    border: none;
+    border-bottom: 1px solid #797d7e;
+    border-radius: unset;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.contact-form .form-group.form-submit-group {
+    padding: 10px 0;
+}
+.form-submit-btn {
+    font-size: 16px;
+}
+.form-control.PhoneInput .PhoneInputInput {
+    border: none !important;
+    outline: none !important;
+}
+.contact-form .form-group .message {
+    padding-top: 10px;
+}
+@media (max-width: 991px) {
+    .contact-form {
+      margin-top: 50px;
+    }
+}

@@ -1,0 +1,11 @@
+/* web designing banner */
+.web-designing-banner{
+    background: url('../../../../public/assests/images/services/web-designing/web-designing-banner.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Designing Services */
+.designing-services-section .specification-block svg {
+    color: #1050bc;
+}
