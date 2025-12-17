@@ -1,0 +1,101 @@
+import { faEnvelope, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
+import SubHeading from "../SubHeading/SubHeading";
+import "./FooterContactSection.css";
+import { Col, Container, Row } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
+import ContactForm from "./ContactForm";
+
+const indiaFlag = `${process.env.REACT_APP_API_URL}/assests/images/india-flag.svg`;
+const USFlag = `${process.env.REACT_APP_API_URL}/assests/images/US-flag.svg`;
+const UKFlag = `${process.env.REACT_APP_API_URL}/assests/images/UK-flag.svg`;
+
+const presenceLists = [
+    {
+        image: indiaFlag,
+        text: "India",
+    },
+    {
+        image: USFlag,
+        text: "United States",
+    },
+    {
+        image: UKFlag,
+        text: "United Kingdom",
+    }
+]
+
+const contactLists = [
+    {
+        icon: faEnvelope,
+        text: "info@iosandweb.net",
+        link: "mailto:info@iosandweb.net",
+    },
+    {
+        icon: faPhoneVolume,
+        text: "+91 0000000000",
+        link: "tel:+910000000000",
+    }
+]
+
+const FooterContactSection = () => {
+    return(
+        <div className="footer_contact_section section-padding">
+            <Container>
+                <Row>
+                    <Col>
+                        <div className="footer_contact_flex">
+                            <div className="footer_contact_cols footer_left_col">
+                                <div className="footer_left_contents">
+                                    <SubHeading text={"Contact Us"} />
+                                    <h2 className="heading_main">Ready To Fuel Your Vision With AI-Powered Innovation?</h2>
+                                </div>
+
+                                <div className="footer_left_contents">
+                                    <SubHeading text={"Our Presence"} />
+                                    <ul className="presence_lists">
+                                        {presenceLists.map((item,i) => (
+                                            <li className="presence_lists_item" key={i}>
+                                                <img src={item.image} alt={item.text} className="presence_image" />
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+
+                                <div className="footer_left_contents desktop_block">
+                                    <p className="paragraph_content">Ready to start? Send us a message and we'll get back to you shortly.</p>
+                                    <div className="footer_contact_lists">
+                                        {contactLists.map((item,i) => (
+                                            <Link to={item.link} className="footer_contact_item" key={i}>
+                                                <FontAwesomeIcon icon={item.icon} />
+                                                <p className="footer_contact_text">{item.text}</p>
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div className="footer_contact_cols">
+                                <ContactForm title={"Partner With Experts Who Leverage AI & Tech To Transform Ideas Into Market-Leading Solutions."} />
+
+                                <div className="footer_left_contents mobile_block">
+                                    <p className="paragraph_content">Ready to start? Send us a message and we'll get back to you shortly.</p>
+                                    <div className="footer_contact_lists">
+                                        {contactLists.map((item,i) => (
+                                            <Link to={item.link} className="footer_contact_item" key={i}>
+                                                <FontAwesomeIcon icon={item.icon} />
+                                                <p className="footer_contact_text">{item.text}</p>
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+    )
+}
+
+export default FooterContactSection

@@ -40,7 +40,7 @@ const awardsLists = [
 
 const AwardsSection = () => {
 
-    const testimonialRef = useRef(null);
+    const awardRef = useRef(null);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const isMobile = windowWidth < 768;
@@ -71,7 +71,7 @@ const AwardsSection = () => {
             <Slider 
                 className="awards-section-carousel" 
                 {...awardsSettings}
-                ref={testimonialRef}
+                ref={awardRef}
             >
                 {awardsLists.map((item,i) => (
                     <div className="item" key={i}>

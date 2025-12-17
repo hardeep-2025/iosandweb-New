@@ -6,6 +6,10 @@
 .why_choose_flex_block .why_choose_cols {
     flex: 1;
 }
+.why_choose_cols.why_choose_left_col {
+    position: sticky;
+    top: 71px;
+}
 .why_choose_flex_block .why_choose_img {
     max-width: 367px;
     width: 100%;
@@ -117,6 +121,9 @@
     }
     .why_choose_accordion .accordion-body {
         padding: 0px 0px 25px;
+    }
+    .why_choose_cols.why_choose_left_col {
+        position: static;
     }
 }
 @media (max-width: 375px) {

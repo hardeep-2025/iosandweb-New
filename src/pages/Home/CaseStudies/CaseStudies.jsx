@@ -13,6 +13,8 @@ const AITranslator = `${process.env.REACT_APP_API_URL}/assests/images/home-new/c
 const tiara = `${process.env.REACT_APP_API_URL}/assests/images/home-new/case-studies/tiara.webp`;
 const surgihealth = `${process.env.REACT_APP_API_URL}/assests/images/home-new/case-studies/surgihealth.webp`;
 
+const casestudiesBG = `${process.env.REACT_APP_API_URL}/assests/images/home-new/case-studies/casestudies_bg.webp`;
+
 const caseStudiesLists = [
     {
         navTitle: "MAP Route",
@@ -158,6 +160,7 @@ const CaseStudies = () => {
 
     return(
         <div className="case_studies_section section-padding">
+            <img src={casestudiesBG} alt="Case Studies" className="casestudies_bg" />
             <Container>
                 <Row>
                     <Col>

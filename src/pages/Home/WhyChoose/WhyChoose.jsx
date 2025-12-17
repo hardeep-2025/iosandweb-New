@@ -7,24 +7,48 @@ const whyChooseImg = `${process.env.REACT_APP_API_URL}/assests/images/home-new/w
 
 const whyChooseLists = [
     {
-        title: "Tailored Solution",
-        text: "We understand that every business is unique, that's why we take the time to listen and understand your requirements and goals, ensuring that whatever we develop for you adheres to your vision perfectly.",
+        title: "Customized Solutions:",
+        text: "Your business is unique. We tailor every service to align perfectly with your vision, goals, and industry challenges, ensuring maximum impact.",
     },
     {
-        title: "Expertise & Experience",
-        text: "Our team of seasoned developers brings years of experience and a wealth of knowledge to the table. From web applications to mobile apps to enterprise solutions, we have the skills to deliver results.",
+        title: "Experienced Team:",
+        text: "Work with an award-winning team that expertly combines creativity, cutting-edge technology, and data-driven insights to deliver exceptional results.",
     },
     {
-        title: "Innovation at the core",
-        text: "Innovation drives everything we do. We stay ahead of the curve, leveraging the latest technologies and trends to build cutting-edge solutions that seamlessly set you apart from the competition.",
+        title: "Future-Proof Results:",
+        text: "We build scalable, flexible solutions designed to grow with your business and adapt to emerging market trends and technologies.",
     },
     {
-        title: "Seamless Integration",
-        text: "Our solutions coherently integrate with your existing systems and processes, minimizing disruptions and maximizing efficiency. Whether you're upgrading legacy systems or starting fresh, we ensure a smooth transition.",
+        title: "Transparent & Reliable:",
+        text: "Clear communication, honest timelines, and consistent delivery are at the heart of our approach, giving you peace of mind throughout the project.",
     },
     {
-        title: "Ongoing Support",
-        text: "Our partnership doesn't just end after deployment; we provide ongoing support and maintenance to keep your software running smoothly and address any issues that may arise.",
+        title: "Customer-Centric Approach:",
+        text: "We prioritize your satisfaction through close collaboration and personalized support at every project stage.",
+    },
+    {
+        title: "Innovative Mindset:",
+        text: "Committed to continuous learning, we leverage the latest tools in AI, blockchain, and digital marketing to keep you ahead of the curve.",
+    },
+    {
+        title: "End-to-End Services:",
+        text: "From strategy to execution and ongoing optimization, we offer comprehensive services under one roof, simplifying your vendor management.",
+    },
+    {
+        title: "Proven Track Record:",
+        text: "Our portfolio includes successful projects across industries, backed by positive client testimonials and measurable business growth.",
+    },
+    {
+        title: "Rigorous Quality Standards:",
+        text: "We implement thorough testing, usability assessments, and performance tuning to ensure your solutions are reliable and user-friendly.",
+    },
+    {
+        title: "Agile & Flexible Development:",
+        text: "Our agile methodology allows for quick iterations and adjustments based on your feedback and evolving needs.",
+    },
+    {
+        title: "Security Focused:",
+        text: "We prioritize data security and privacy in all our solutions to protect your business and customers.",
     }
 ]
 
@@ -35,7 +59,7 @@ const WhyChoose = () => {
                 <Row>
                     <Col>
                         <div className="why_choose_flex_block">
-                            <div className="why_choose_cols">
+                            <div className="why_choose_cols why_choose_left_col">
                                 <h2 className="heading_main">Why Choose IAW Technologies, You May Ask?</h2>
                                 <p className="paragraph_content">We ensure web solutions that work flawlessly across multiple devices.</p>
                                 <img src={whyChooseImg} alt="Why Choose IAW Technologies" className="why_choose_img" />

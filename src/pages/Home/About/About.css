@@ -31,13 +31,35 @@
     border-radius: 25px;
     color: var(--color-white);
     padding: 10px 20px;
-    background: linear-gradient(var(--color-body), var(--color-body)) padding-box,
-              linear-gradient(90deg, var(--color-gradient1) 0%, var(--color-gradient2) 100%) border-box;
-    border: 1px solid transparent;
-}
-.btn-gradient-blue:hover {
     background: linear-gradient(90deg, var(--color-blue) 0%, var(--color-purple) 100%) padding-box,
               linear-gradient(90deg, var(--color-blue) 0%, var(--color-purple) 100%) border-box;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+.btn-gradient-blue::before {
+    animation: shine 1.5s ease-in-out infinite;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, .5), transparent);
+}
+.btn-gradient-blue:hover::before{
+    width: 100%;
+}
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+.btn-gradient-blue:hover {
+    background: linear-gradient(90deg, var(--color-purple) 0%, var(--color-blue) 100%) padding-box,
+              linear-gradient(90deg, var(--color-purple) 0%, var(--color-blue) 100%) border-box;
 }
 .about_img {
     max-width: 100%;
