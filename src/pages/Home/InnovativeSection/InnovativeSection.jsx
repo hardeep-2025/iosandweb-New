@@ -4,16 +4,16 @@ import { Col, Container, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 
-const innovativeImg = `${process.env.REACT_APP_API_URL}/assests/images/home/innovative/imnnovative-img.webp`;
-const innovativeBg = `${process.env.REACT_APP_API_URL}/assests/images/home/innovative/innovative-bg.webp`;
-const softwareIcon = `${process.env.REACT_APP_API_URL}/assests/images/home/innovative/software.webp`;
-const designIcon = `${process.env.REACT_APP_API_URL}/assests/images/home/innovative/ui-design.webp`;
-const codingIcon = `${process.env.REACT_APP_API_URL}/assests/images/home/innovative/coding.webp`;
-const pocIcon = `${process.env.REACT_APP_API_URL}/assests/images/home/innovative/poc.webp`;
-const digitalIcon = `${process.env.REACT_APP_API_URL}/assests/images/home/innovative/digital.webp`;
-const payIcon = `${process.env.REACT_APP_API_URL}/assests/images/home/innovative/pay.webp`;
-const blockchainIcon = `${process.env.REACT_APP_API_URL}/assests/images/home/innovative/blockchain.webp`;
-const targetIcon = `${process.env.REACT_APP_API_URL}/assests/images/home/innovative/target.webp`;
+const innovativeImg = `${process.env.REACT_APP_API_URL}/assests/home/innovative/imnnovative-img.webp`;
+const innovativeBg = `${process.env.REACT_APP_API_URL}/assests/home/innovative/innovative-bg.webp`;
+const softwareIcon = `${process.env.REACT_APP_API_URL}/assests/home/innovative/software.webp`;
+const designIcon = `${process.env.REACT_APP_API_URL}/assests/home/innovative/ui-design.webp`;
+const codingIcon = `${process.env.REACT_APP_API_URL}/assests/home/innovative/coding.webp`;
+const pocIcon = `${process.env.REACT_APP_API_URL}/assests/home/innovative/poc.webp`;
+const digitalIcon = `${process.env.REACT_APP_API_URL}/assests/home/innovative/digital.webp`;
+const payIcon = `${process.env.REACT_APP_API_URL}/assests/home/innovative/pay.webp`;
+const blockchainIcon = `${process.env.REACT_APP_API_URL}/assests/home/innovative/blockchain.webp`;
+const targetIcon = `${process.env.REACT_APP_API_URL}/assests/home/innovative/target.webp`;
 
 const innovativeLists = [
     {

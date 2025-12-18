@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 
-const aboutImg = `${process.env.REACT_APP_API_URL}/assests/images/home/about.gif`;
+const aboutImg = `${process.env.REACT_APP_API_URL}/assests/home/about.gif`;
 
 const AboutSection = () => {
     return(

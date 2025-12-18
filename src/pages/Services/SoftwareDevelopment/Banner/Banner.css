@@ -1,0 +1,51 @@
+.software_banner_section {
+    background: linear-gradient(260.42deg, #090B2A 15.89%, #0B2733 62.49%);
+    color: var(--color-white);
+    position: relative;
+}
+.software_banner_section .software_bannerbg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    object-fit: contain;
+}
+.software_banner_section .container {
+    position: relative;
+}
+.software_banner_flexs {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+}
+.software_banner_flexs .software_banner_cols {
+    flex: 1;
+}
+.software_banner_flexs .software_banner_cols.contents_block {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+    justify-content: center;
+}
+.software_banner_images {
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.software_banner_images .software_bannerImage{
+    width: 478px;
+    position: absolute;
+    top: 0;
+}
+.software_banner_images .software_bannerBox {
+    max-width: 540px;
+    width: 100%;
+    padding-top: 300px;
+}

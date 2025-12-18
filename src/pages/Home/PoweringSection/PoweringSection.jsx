@@ -6,11 +6,11 @@ import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import { useCountUp } from "react-countup";
 import AwardsSection from "../AwardsSection/AwardsSection";
 
-const bgOverlay = `${process.env.REACT_APP_API_URL}/assests/images/home/powering/bg_overlay.webp`;
-const briefcase = `${process.env.REACT_APP_API_URL}/assests/images/home/powering/briefcase.webp`;
-const protection = `${process.env.REACT_APP_API_URL}/assests/images/home/powering/protection.webp`;
-const diamond = `${process.env.REACT_APP_API_URL}/assests/images/home/powering/diamond.webp`;
-const artificial = `${process.env.REACT_APP_API_URL}/assests/images/home/powering/artificial-intelligence.webp`;
+const bgOverlay = `${process.env.REACT_APP_API_URL}/assests/home/powering/bg_overlay.webp`;
+const briefcase = `${process.env.REACT_APP_API_URL}/assests/home/powering/briefcase.webp`;
+const protection = `${process.env.REACT_APP_API_URL}/assests/home/powering/protection.webp`;
+const diamond = `${process.env.REACT_APP_API_URL}/assests/home/powering/diamond.webp`;
+const artificial = `${process.env.REACT_APP_API_URL}/assests/home/powering/artificial-intelligence.webp`;
 
 const poweringLists = [
     {

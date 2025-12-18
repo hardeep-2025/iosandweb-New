@@ -7,16 +7,16 @@ import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight, faArrowRight, faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-const ecommerce = `${process.env.REACT_APP_API_URL}/assests/images/home/industries/ecommerce-img.webp`;
-const ecommerceIcon = `${process.env.REACT_APP_API_URL}/assests/images/home/industries/grocery-store.webp`;
-const realestate = `${process.env.REACT_APP_API_URL}/assests/images/home/industries/realestate-img.webp`;
-const realestateIcon = `${process.env.REACT_APP_API_URL}/assests/images/home/industries/realestate.webp`;
-const artificial = `${process.env.REACT_APP_API_URL}/assests/images/home/industries/artificial-img.webp`;
-const artificialIcon = `${process.env.REACT_APP_API_URL}/assests/images/home/industries/artificial-intelligence.webp`;
-const healthcare = `${process.env.REACT_APP_API_URL}/assests/images/home/industries/healthcare-img.webp`;
-const healthcareIcon = `${process.env.REACT_APP_API_URL}/assests/images/home/industries/healthcare.webp`;
-const finance = `${process.env.REACT_APP_API_URL}/assests/images/home/industries/finance-img.webp`;
-const financeIcon = `${process.env.REACT_APP_API_URL}/assests/images/home/industries/finance.webp`;
+const ecommerce = `${process.env.REACT_APP_API_URL}/assests/home/industries/ecommerce-img.webp`;
+const ecommerceIcon = `${process.env.REACT_APP_API_URL}/assests/home/industries/grocery-store.webp`;
+const realestate = `${process.env.REACT_APP_API_URL}/assests/home/industries/realestate-img.webp`;
+const realestateIcon = `${process.env.REACT_APP_API_URL}/assests/home/industries/realestate.webp`;
+const artificial = `${process.env.REACT_APP_API_URL}/assests/home/industries/artificial-img.webp`;
+const artificialIcon = `${process.env.REACT_APP_API_URL}/assests/home/industries/artificial-intelligence.webp`;
+const healthcare = `${process.env.REACT_APP_API_URL}/assests/home/industries/healthcare-img.webp`;
+const healthcareIcon = `${process.env.REACT_APP_API_URL}/assests/home/industries/healthcare.webp`;
+const finance = `${process.env.REACT_APP_API_URL}/assests/home/industries/finance-img.webp`;
+const financeIcon = `${process.env.REACT_APP_API_URL}/assests/home/industries/finance.webp`;
 
 const industriesLists = [
     {

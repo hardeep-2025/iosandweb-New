@@ -6,14 +6,14 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 
-const maproute = `${process.env.REACT_APP_API_URL}/assests/images/home/case-studies/maproute.webp`;
-const chatbot = `${process.env.REACT_APP_API_URL}/assests/images/home/case-studies/chatbot.webp`;
-const xrpTrade = `${process.env.REACT_APP_API_URL}/assests/images/home/case-studies/xrp-trade.webp`;
-const AITranslator = `${process.env.REACT_APP_API_URL}/assests/images/home/case-studies/AITranslator.webp`;
-const tiara = `${process.env.REACT_APP_API_URL}/assests/images/home/case-studies/tiara.webp`;
-const surgihealth = `${process.env.REACT_APP_API_URL}/assests/images/home/case-studies/surgihealth.webp`;
+const maproute = `${process.env.REACT_APP_API_URL}/assests/home/case-studies/maproute.webp`;
+const chatbot = `${process.env.REACT_APP_API_URL}/assests/home/case-studies/chatbot.webp`;
+const xrpTrade = `${process.env.REACT_APP_API_URL}/assests/home/case-studies/xrp-trade.webp`;
+const AITranslator = `${process.env.REACT_APP_API_URL}/assests/home/case-studies/AITranslator.webp`;
+const tiara = `${process.env.REACT_APP_API_URL}/assests/home/case-studies/tiara.webp`;
+const surgihealth = `${process.env.REACT_APP_API_URL}/assests/home/case-studies/surgihealth.webp`;
 
-const casestudiesBG = `${process.env.REACT_APP_API_URL}/assests/images/home/case-studies/casestudies_bg.webp`;
+const casestudiesBG = `${process.env.REACT_APP_API_URL}/assests/home/case-studies/casestudies_bg.webp`;
 
 const caseStudiesLists = [
     {

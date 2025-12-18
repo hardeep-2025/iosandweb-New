@@ -7,12 +7,12 @@ import { faAnglesRight } from "@fortawesome/free-solid-svg-icons"
 import Slider from "react-slick";
 import { useEffect, useState } from "react";
 
-const servicesBG = `${process.env.REACT_APP_API_URL}/assests/images/home/services/services_bg.webp`;
-const artificialIcon = `${process.env.REACT_APP_API_URL}/assests/images/home/services/artificial-intelligence.svg`;
-const aiIcon = `${process.env.REACT_APP_API_URL}/assests/images/home/services/aii.svg`;
-const blockchainIcon = `${process.env.REACT_APP_API_URL}/assests/images/home/services/blockchain.svg`;
-const dataIcon = `${process.env.REACT_APP_API_URL}/assests/images/home/services/data-science.svg`;
-const analysisIcon = `${process.env.REACT_APP_API_URL}/assests/images/home/services/analysis.svg`;
+const servicesBG = `${process.env.REACT_APP_API_URL}/assests/home/services/services_bg.webp`;
+const artificialIcon = `${process.env.REACT_APP_API_URL}/assests/home/services/artificial-intelligence.svg`;
+const aiIcon = `${process.env.REACT_APP_API_URL}/assests/home/services/aii.svg`;
+const blockchainIcon = `${process.env.REACT_APP_API_URL}/assests/home/services/blockchain.svg`;
+const dataIcon = `${process.env.REACT_APP_API_URL}/assests/home/services/data-science.svg`;
+const analysisIcon = `${process.env.REACT_APP_API_URL}/assests/home/services/analysis.svg`;
 
 const serviceSlider = [
     {
