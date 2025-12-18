@@ -50,7 +50,7 @@
     gap: 30px;
     align-items: center;
     font-size: 25px;
-    font-family: var(--font-poppins-semibold);
+    font-family: var(--font-poppins-medium);
 }
 .why_choose_header .why_choose_numbers {
     background: linear-gradient(var(--color-body), var(--color-body)) padding-box,
@@ -108,10 +108,17 @@
         width: 30px;
         height: 30px;
     }
+    .why_choose_flex_block {
+        gap: 1rem;
+    }
+    .why_choose_accordion .accordion-item .accordion-button {
+        padding: 15px 10px;
+    }
 }
 @media (max-width: 767px) {
     .why_choose_flex_block {
         flex-direction: column;
+        gap: 2rem;
     }
     .why_choose_flex_block .why_choose_cols {
         width: 100%;

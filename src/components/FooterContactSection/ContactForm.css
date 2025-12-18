@@ -96,4 +96,7 @@
         flex-direction: column;
         gap: 0;
     }
+    .footer_contact_form {
+        padding: 20px;
+    }
 }

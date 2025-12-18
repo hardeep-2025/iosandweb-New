@@ -43,6 +43,7 @@ const AwardsSection = () => {
     const awardRef = useRef(null);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
+    const isSmall = windowWidth < 380;
     const isMobile = windowWidth < 768;
     const isTablet = windowWidth < 1200;
 
@@ -56,7 +57,7 @@ const AwardsSection = () => {
         dots: false,
         arrows: false,
         infinite: true,
-        slidesToShow: isMobile ? 3 : isTablet ? 4 : 5,
+        slidesToShow: isSmall ? 2 : isMobile ? 3 : isTablet ? 4 : 5,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 5000,

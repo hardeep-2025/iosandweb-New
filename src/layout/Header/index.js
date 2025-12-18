@@ -278,31 +278,7 @@ const portfolioMenu = [
     image: signIcon,
     class: "bg-pink",
     tech: "Wordpress",
-  },
-  // {
-  //   title: "Windbooster",
-  //   url: "https://iosandweb.net/windbooster/",
-  //   image: carIcon,
-  //   class: "bg-red"
-  // },
-  // {
-  //   title: "Danube Properties",
-  //   url: "https://iosandweb.net/danubeproperties/",
-  //   image: buildingsIcon,
-  //   class: "bg-green"
-  // },
-  // {
-  //   title: "Simulacrum",
-  //   url: "https://iosandweb.net/simulacrum/",
-  //   image: procedureIcon,
-  //   class: "bg-orange"
-  // },
-  // {
-  //   title: "Surgi Health",
-  //   url: "https://iosandweb.com/surgi-health/",
-  //   image: healthIcon,
-  //   class: "bg-blue"
-  // },
+  }
   
 ]
 

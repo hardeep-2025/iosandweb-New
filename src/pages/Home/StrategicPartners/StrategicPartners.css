@@ -43,4 +43,10 @@
     .partners_grid_block {
         gap: 15px;
     }
+    .partners_grid_block {
+        grid-template-columns: repeat(2, 130px);
+    }
+    .partners_grid_item {
+        height: 130px;
+    }
 }

@@ -78,3 +78,8 @@
         display: none;
     }
 }
+@media (max-width: 767px) {
+    .footer_contact_cols .heading_main {
+        font-size: 30px;
+    }
+}

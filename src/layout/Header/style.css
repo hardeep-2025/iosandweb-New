@@ -28,8 +28,8 @@
 }
 
 .navbar-nav .btn.nav-link {
-    background: linear-gradient(var(--color-body), var(--color-body)) padding-box,
-              linear-gradient(90deg, var(--color-darkpurple) 0%, var(--color-bluenew) 100%) border-box;
+    background: linear-gradient(90deg, var(--color-blue) 0%, var(--color-purple) 100%) padding-box,
+              linear-gradient(90deg, var(--color-blue) 0%, var(--color-purple) 100%) border-box;
     border: 1px solid transparent;
     color: #fff;
     padding: 11px 15px !important;
@@ -43,8 +43,20 @@
     padding-left: 8px;
 }
 .navbar-nav .btn.nav-link:hover {
-    background: linear-gradient(90deg, var(--color-blue) 0%, var(--color-purple) 100%) padding-box,
-              linear-gradient(90deg, var(--color-blue) 0%, var(--color-purple) 100%) border-box;
+    background: linear-gradient(90deg, var(--color-purple) 0%, var(--color-blue) 100%) padding-box,
+              linear-gradient(90deg, var(--color-purple) 0%, var(--color-blue) 100%) border-box;
+}
+.navbar-nav .btn.nav-link::before {
+    animation: shine 1.5s ease-in-out infinite;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, .5), transparent);
+}
+.navbar-nav .btn.nav-link:hover::before{
+    width: 100%;
 }
 .navbar-nav .nav-link{
     padding: 20px 15px !important;
@@ -74,32 +86,6 @@
 .navbar-nav .nav-link.active:before {
     width: calc(100% - 30px);
     opacity: 1;
-}
-.navbar-nav .btn.nav-link:before{
-    display: none;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 200px;
-    height: 200px;
-    content: "";
-    background: #fff;
-    border-radius: 50%;
-    transform: translate(-50%,-50%) scale(0);
-    -webkit-transform: translate(-50%,-50%) scale(0);
-    transform-origin: center center;
-    -webkit-transform-origin: center center;
-    visibility: hidden;
-    opacity: 0;
-    z-index: -1;
-}
-.btn.nav-link:hover:before{
-    animation-duration: 2s;
-    animation-fill-mode: both;
-    animation-name: btneffect;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-fill-mode: both;
-    -webkit-animation-name: btneffect;
 }
 .header.text-white .navbar-toggler {
     border-color: #fff;
@@ -280,12 +266,11 @@
       top: 70px;
       background-color: var(--color-darkblack);
       padding-bottom: 20px;
-      border-bottom: 1px solid #dee2e6;
     }
     .header .navbar-nav {
         justify-content: center;
         align-items: flex-start;
-        padding: 30px 12px 20px;
+        padding: 30px 20px 20px;
     }
     .navbar-nav .nav-link:before{
         display: none;

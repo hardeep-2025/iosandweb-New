@@ -63,6 +63,7 @@ const Testimonials = () => {
 
     const testimonialRef = useRef(null);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const videoRefs = useRef([]);
     
     const isMobile = windowWidth < 992;
     
@@ -72,17 +73,91 @@ const Testimonials = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
     
+    const handleSlideChange = () => {
+        const slides = document.querySelectorAll(
+            ".testimonials_slider_carousel .slick-slide"
+        );
+
+        slides.forEach((slide) => {
+            const video = slide.querySelector("video");
+            const thumb = slide.querySelector(".video-thumbnail");
+
+            if (!video) return;
+
+            if (slide.classList.contains("slick-current")) {
+                video.classList.add("show");
+                video.muted = true;
+                video.currentTime = 0;
+                thumb && (thumb.style.display = "none");
+
+                setTimeout(() => {
+                    video.play().catch(() => {});
+                }, 150);
+                
+            } else {
+                video.pause();
+                video.currentTime = 0;
+                thumb && (thumb.style.display = "block");
+                video.classList.remove("show");
+            }
+        });
+    };
+
     const testimonialSetting = {
         dots: false,
-        arrows: true,
+        arrows: isMobile ? false : true,
         infinite: true,
         slidesToShow: isMobile ? 1 : 2,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 8000,
         pauseOnHover: true,
         nextArrow: <CustomNextArrow />,
-        prevArrow: <CustomPrevArrow />
+        prevArrow: <CustomPrevArrow />,
+        afterChange: handleSlideChange,
+    };
+
+    useEffect(() => {
+        handleSlideChange();
+    }, []);
+
+    const handlePlayClick = (index, event) => {
+        const clickedSlide = event.currentTarget.closest(".item");
+        if (!clickedSlide) return;
+
+        const allSlides = document.querySelectorAll(".testimonials_slider_carousel .item");
+
+        allSlides.forEach((slide) => {
+            const video = slide.querySelector("video");
+            const thumb = slide.querySelector(".video-thumbnail");
+            if (!video) return;
+
+            if (slide === clickedSlide) {
+                if (thumb) thumb.style.display = "none";
+
+                video.classList.add("show");
+                // Reset and play
+                video.pause();
+                video.currentTime = 0;
+
+                // Muted first to allow autoplay
+                video.muted = true;
+                video.play()
+                .then(() => {
+                    video.muted = false; // unmute after click
+                })
+                .catch(() => {
+                    video.muted = true;
+                });
+
+            } else {
+                // Stop other videos
+                video.pause();
+                video.currentTime = 0;
+                if (thumb) thumb.style.display = "block";
+                video.classList.remove("show");
+            }
+        });
     };
 
     return(
@@ -107,7 +182,27 @@ const Testimonials = () => {
                                     <div className="item" key={i}>
                                         <div className="testimonials_flex">
                                             <div className="testimonials_video">
-                                                <img src={item.image} alt={item.name} className="testimonials_image" />
+                                                <div className="video-thumbnail">
+                                                    <img src={item.image} alt={item.name} className="testimonials_image" />
+                                                    <span
+                                                        className="play-btn"
+                                                        onClick={(e) => handlePlayClick(i, e)}
+                                                    >
+                                                        <FontAwesomeIcon icon={faCirclePlay} />
+                                                    </span>
+                                                </div>
+
+                                                <video
+                                                    className="testimonial_video_block"
+                                                    loop
+                                                    playsInline
+                                                    preload="auto"
+                                                    muted
+                                                    ref={(el) => (videoRefs.current[i] = el)}
+                                                >
+                                                    <source src={item.video} type="video/mp4" />
+                                                </video>
+
                                                 <div className="testimonials_name_div">
                                                     <FontAwesomeIcon icon={faCirclePlay} />
                                                     <span className="testimonials_name">{item.name}</span>

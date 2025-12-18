@@ -2,7 +2,6 @@
     display: flex;
     gap: 2rem;
     align-items: center;
-    justify-content: space-between;
 }
 .elevate_left_col {
     flex: 1;
@@ -15,10 +14,12 @@
     margin-top: 2.5rem;
 }
 .elevate_right_col {
-    width: 377px;
+    text-align: center;
+    flex: 1;
 }
 .elevate_success_img {
     width: 100%;
+    max-width: 450px;
 }
 @media (max-width: 991px) {
     .elevate_success_flex {

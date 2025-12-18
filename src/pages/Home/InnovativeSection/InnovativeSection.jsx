@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import "./InnovativeSection.css";
 import { Col, Container, Row } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 
 const innovativeImg = `${process.env.REACT_APP_API_URL}/assests/images/home-new/innovative/imnnovative-img.webp`;
 const innovativeBg = `${process.env.REACT_APP_API_URL}/assests/images/home-new/innovative/innovative-bg.webp`;
@@ -109,6 +111,8 @@ const InnovativeSection = () => {
                                         <span className={`innovative_items_span ${item.text}`} key={i}>{item.title}</span>
                                     ))}
                                 </div>
+
+                                <Link to="/contact-us" className="btn-gradient-blue">Get Expert Help <FontAwesomeIcon icon={faAnglesRight} /></Link>
                             </div>
                             <div className="innovative_right_col">
                                 <div className="innovative_lists_grid">

@@ -279,4 +279,7 @@
     .powered_lists_grid .powered_lists_item:last-child {
         border-bottom: 0px;
     }
+    .ai_powered_contents {
+        padding: 0 15px;
+    }
 }

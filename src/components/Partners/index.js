@@ -87,6 +87,7 @@ const Partners = () => {
     const partnersRef = useRef(null);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     
+    const isSmallPartner = windowWidth < 380;
     const isMobilePartner = windowWidth < 768;
     const isTabletPartner = windowWidth < 1200;
     
@@ -100,7 +101,7 @@ const Partners = () => {
         dots: false,
         arrows: false,
         infinite: true,
-        slidesToShow: isMobilePartner ? 3 : isTabletPartner ? 4 : 5,
+        slidesToShow: isSmallPartner ? 2 : isMobilePartner ? 3 : isTabletPartner ? 4 : 5,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 5000,

@@ -1,5 +1,7 @@
 .about_section {
     padding-bottom: 250px;
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
 .about_section_flex {
     display: flex;
@@ -61,8 +63,11 @@
     background: linear-gradient(90deg, var(--color-purple) 0%, var(--color-blue) 100%) padding-box,
               linear-gradient(90deg, var(--color-purple) 0%, var(--color-blue) 100%) border-box;
 }
+.about_section_cols.image_col {
+    text-align: center;
+}
 .about_img {
-    max-width: 100%;
+    max-width: 500px;
     object-fit: scale-down;
     margin: auto;
     width: 100%;

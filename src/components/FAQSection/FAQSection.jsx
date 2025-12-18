@@ -20,13 +20,13 @@ const FAQSection = ({subheading, heading, lists}) => {
                                 {lists && lists.length >= 1 && lists.map((item,index) => {
                                     const formattedKey = (index + 1).toString().padStart(2, '0');
                                     return (
-                                    <Accordion.Item eventKey={index}>
-                                        <Accordion.Header>
-                                            <span>{formattedKey}</span>
-                                            {item.title}
-                                        </Accordion.Header>
-                                        <Accordion.Body dangerouslySetInnerHTML={{ __html: item.text }} ></Accordion.Body>
-                                    </Accordion.Item>
+                                        <Accordion.Item eventKey={index} key={index}>
+                                            <Accordion.Header>
+                                                <span>{formattedKey}</span>
+                                                {item.title}
+                                            </Accordion.Header>
+                                            <Accordion.Body dangerouslySetInnerHTML={{ __html: item.text }} ></Accordion.Body>
+                                        </Accordion.Item>
                                     )
                                 })}
                             </Accordion>

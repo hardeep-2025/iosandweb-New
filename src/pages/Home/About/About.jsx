@@ -4,11 +4,11 @@ import { Col, Container, Row } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 
-const aboutImg = `${process.env.REACT_APP_API_URL}/assests/images/home-new/about_img.webp`;
+const aboutImg = `${process.env.REACT_APP_API_URL}/assests/images/home-new/about.gif`;
 
 const AboutSection = () => {
     return(
-        <div className="about_section section-padding body-background">
+        <div className="about_section section-padding">
             <Container>
                 <Row>
                     <Col>
