@@ -12,58 +12,58 @@ import { faAnglesRight, faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import OwlCarousel from "react-owl-carousel";
 
-const logo = `${process.env.REACT_APP_API_URL}/assests/images/IAW-logo-white.png`;
+const logo = `${process.env.REACT_APP_API_URL}/assests/IAW-logo-white.png`;
 const menuIcon = `${process.env.REACT_APP_API_URL}/assests/menu_icon.png`;
 
 // service menu
-const mobileApp = `${process.env.REACT_APP_API_URL}/assests/images/home/Mobile-app.svg`;
-const softwareDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/home/Software-Development.svg`;
-const digitalTransformation = `${process.env.REACT_APP_API_URL}/assests/images/home/Digital-Transformation.svg`;
-const dataScience = `${process.env.REACT_APP_API_URL}/assests/images/home/Data-Science-Analytics.svg`;
-const blockChain = `${process.env.REACT_APP_API_URL}/assests/images/home/Blockchain-Services.svg`;
-const ideationDesign = `${process.env.REACT_APP_API_URL}/assests/images/home/ideation-design.svg`;
+const mobileApp = `${process.env.REACT_APP_API_URL}/assests/menu/Mobile-app.svg`;
+const softwareDevelopment = `${process.env.REACT_APP_API_URL}/assests/menu/Software-Development.svg`;
+const digitalTransformation = `${process.env.REACT_APP_API_URL}/assests/menu/Digital-Transformation.svg`;
+const dataScience = `${process.env.REACT_APP_API_URL}/assests/menu/Data-Science-Analytics.svg`;
+const blockChain = `${process.env.REACT_APP_API_URL}/assests/menu/Blockchain-Services.svg`;
+const ideationDesign = `${process.env.REACT_APP_API_URL}/assests/menu/ideation-design.svg`;
 
 // industries menu
-const eCommerceIcon = `${process.env.REACT_APP_API_URL}/assests/images/eCommerce.png`;
-const realEstateIcon = `${process.env.REACT_APP_API_URL}/assests/images/real-estate.png`;
-const generativeAI = `${process.env.REACT_APP_API_URL}/assests/images/artificial-intelligence.png`;
-const healthcareIcon = `${process.env.REACT_APP_API_URL}/assests/images/health-care.png`;
+const eCommerceIcon = `${process.env.REACT_APP_API_URL}/assests/menu/eCommerce.png`;
+const realEstateIcon = `${process.env.REACT_APP_API_URL}/assests/menu/real-estate.png`;
+const generativeAI = `${process.env.REACT_APP_API_URL}/assests/menu/artificial-intelligence.png`;
+const healthcareIcon = `${process.env.REACT_APP_API_URL}/assests/menu/health-care.png`;
 
 // about menu
-const aboutIcon = `${process.env.REACT_APP_API_URL}/assests/images/about-us.png`;
-const teamIcon = `${process.env.REACT_APP_API_URL}/assests/images/our-team-icon.png`;
-const careerIcon = `${process.env.REACT_APP_API_URL}/assests/images/career-icon.png`;
-const howWorkIcon = `${process.env.REACT_APP_API_URL}/assests/images/how-we-work.png`;
+const aboutIcon = `${process.env.REACT_APP_API_URL}/assests/menu/about-us.png`;
+const teamIcon = `${process.env.REACT_APP_API_URL}/assests/menu/our-team-icon.png`;
+const careerIcon = `${process.env.REACT_APP_API_URL}/assests/menu/career-icon.png`;
+const howWorkIcon = `${process.env.REACT_APP_API_URL}/assests/menu/how-we-work.png`;
 
 // Award images
-const goodFirmLogo = `${process.env.REACT_APP_API_URL}/assests/images/awards/good-firms-logo.webp`;
-const appFutura = `${process.env.REACT_APP_API_URL}/assests/images/awards/appfutura.webp`;
-const itFirms = `${process.env.REACT_APP_API_URL}/assests/images/awards/itfirm.webp`;
-const topDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/awards/top-development.webp`;
-const upWork = `${process.env.REACT_APP_API_URL}/assests/images/awards/upwork.webp`;
+const goodFirmLogo = `${process.env.REACT_APP_API_URL}/assests/menu/awards/good-firms-logo.webp`;
+const appFutura = `${process.env.REACT_APP_API_URL}/assests/menu/awards/appfutura.webp`;
+const itFirms = `${process.env.REACT_APP_API_URL}/assests/menu/awards/itfirm.webp`;
+const topDevelopment = `${process.env.REACT_APP_API_URL}/assests/menu/awards/top-development.webp`;
+const upWork = `${process.env.REACT_APP_API_URL}/assests/menu/awards/upwork.webp`;
 
 // Portfolio images
-const maprouteIcon = `${process.env.REACT_APP_API_URL}/assests/images/map-route.png`;
-const aiIcon = `${process.env.REACT_APP_API_URL}/assests/images/chat-bot.png`;
-const xrpIcon = `${process.env.REACT_APP_API_URL}/assests/images/xrp.png`;
-const stakeIcon = `${process.env.REACT_APP_API_URL}/assests/images/staking.png`;
-const chatbotIcon = `${process.env.REACT_APP_API_URL}/assests/images/chatbot.png`;
-const shoesIcon = `${process.env.REACT_APP_API_URL}/assests/images/shoes.png`;
-const spaIcon = `${process.env.REACT_APP_API_URL}/assests/images/spa.png`;
-const leafIcon = `${process.env.REACT_APP_API_URL}/assests/images/leaf.png`;
-const careplanIcon = `${process.env.REACT_APP_API_URL}/assests/images/careplan.png`;
-const arabicIcon = `${process.env.REACT_APP_API_URL}/assests/images/arabic.png`;
-const onmenIcon = `${process.env.REACT_APP_API_URL}/assests/images/onmen.png`;
-const tiaraIcon = `${process.env.REACT_APP_API_URL}/assests/images/lotus.png`;
-const signIcon = `${process.env.REACT_APP_API_URL}/assests/images/sign-contract.png`;
-const carIcon = `${process.env.REACT_APP_API_URL}/assests/images/car-repair.png`;
-const buildingsIcon = `${process.env.REACT_APP_API_URL}/assests/images/buildings.png`;
-const procedureIcon = `${process.env.REACT_APP_API_URL}/assests/images/procedure.png`;
-const healthIcon = `${process.env.REACT_APP_API_URL}/assests/images/heartbeat.png`;
-const groceryIcon = `${process.env.REACT_APP_API_URL}/assests/images/grocery.png`;
-const hairIcon = `${process.env.REACT_APP_API_URL}/assests/images/hair.png`;
-const beautyIcon = `${process.env.REACT_APP_API_URL}/assests/images/beauty.png`;
-const massageIcon = `${process.env.REACT_APP_API_URL}/assests/images/massage.png`;
+const maprouteIcon = `${process.env.REACT_APP_API_URL}/assests/menu/map-route.png`;
+const aiIcon = `${process.env.REACT_APP_API_URL}/assests/menu/chat-bot.png`;
+const xrpIcon = `${process.env.REACT_APP_API_URL}/assests/menu/xrp.png`;
+const stakeIcon = `${process.env.REACT_APP_API_URL}/assests/menu/staking.png`;
+const chatbotIcon = `${process.env.REACT_APP_API_URL}/assests/menu/chatbot.png`;
+const shoesIcon = `${process.env.REACT_APP_API_URL}/assests/menu/shoes.png`;
+const spaIcon = `${process.env.REACT_APP_API_URL}/assests/menu/spa.png`;
+const leafIcon = `${process.env.REACT_APP_API_URL}/assests/menu/leaf.png`;
+const careplanIcon = `${process.env.REACT_APP_API_URL}/assests/menu/careplan.png`;
+const arabicIcon = `${process.env.REACT_APP_API_URL}/assests/menu/arabic.png`;
+const onmenIcon = `${process.env.REACT_APP_API_URL}/assests/menu/onmen.png`;
+const tiaraIcon = `${process.env.REACT_APP_API_URL}/assests/menu/lotus.png`;
+const signIcon = `${process.env.REACT_APP_API_URL}/assests/menu/sign-contract.png`;
+const carIcon = `${process.env.REACT_APP_API_URL}/assests/menu/car-repair.png`;
+const buildingsIcon = `${process.env.REACT_APP_API_URL}/assests/menu/buildings.png`;
+const procedureIcon = `${process.env.REACT_APP_API_URL}/assests/menu/procedure.png`;
+const healthIcon = `${process.env.REACT_APP_API_URL}/assests/menu/heartbeat.png`;
+const groceryIcon = `${process.env.REACT_APP_API_URL}/assests/menu/grocery.png`;
+const hairIcon = `${process.env.REACT_APP_API_URL}/assests/menu/hair.png`;
+const beautyIcon = `${process.env.REACT_APP_API_URL}/assests/menu/beauty.png`;
+const massageIcon = `${process.env.REACT_APP_API_URL}/assests/menu/massage.png`;
 
 // Services Menu
 const servicesMenu = [

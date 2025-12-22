@@ -5,7 +5,7 @@ import axios from 'axios';
 import { Row, Col, Container, Spinner } from "react-bootstrap";
 import SEO from "../../components/SEO";
 import BlogDetailsForm from "../../components/BlogDetailsForm";
-const defaultImage = `${process.env.REACT_APP_API_URL}/assests/images/placeholder-image.webp`;
+const defaultImage = `${process.env.REACT_APP_API_URL}/assests/placeholder-image.webp`;
 
 function BlogDetails() {
     const url = useParams().url;

@@ -6,9 +6,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import ContactForm from "./ContactForm";
 
-const indiaFlag = `${process.env.REACT_APP_API_URL}/assests/images/india-flag.svg`;
-const USFlag = `${process.env.REACT_APP_API_URL}/assests/images/US-flag.svg`;
-const UKFlag = `${process.env.REACT_APP_API_URL}/assests/images/UK-flag.svg`;
+const indiaFlag = `${process.env.REACT_APP_API_URL}/assests/india-flag.svg`;
+const USFlag = `${process.env.REACT_APP_API_URL}/assests/US-flag.svg`;
+const UKFlag = `${process.env.REACT_APP_API_URL}/assests/UK-flag.svg`;
 
 const presenceLists = [
     {

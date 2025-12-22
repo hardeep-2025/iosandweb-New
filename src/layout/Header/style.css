@@ -289,6 +289,7 @@
     }
     .nav-item-dropdown .nav-link-wrapper {
         padding: 0 10px;
+        gap: 4px;
     }
 }
 @media (max-width: 991px) {

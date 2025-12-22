@@ -34,7 +34,7 @@
 }
 .reliable_links_grid .reliable_links_item {
     position: relative;
-    padding: 30px 0;
+    padding: 50px 0;
     border-top: 1px solid var(--color-white);
 }
 .reliable_links_grid .reliable_links_item:first-child,
@@ -53,6 +53,11 @@
 }
 .reliable_custom_flexs .mobile {
     display: none;
+}
+@media (max-width: 1399px) {
+    .reliable_links_grid .reliable_links_item {
+        padding: 30px 0;
+    }
 }
 @media (max-width: 1199px) {
     .reliable_custom_flexs {

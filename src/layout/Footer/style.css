@@ -12,10 +12,6 @@
 }
 /* Footer Top */
 .footer-top{
-    /* background: url('../../../public/assests/images/footer-hq-bg.webp') no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-top: 6px solid #1163fb; */
     position: relative;
 }
 .footer-logo{
@@ -56,7 +52,7 @@
     margin: auto;
 }
 .footer-clock .goxvDC{
-    background: url('../../../public/assests/images/footer-clock.jpg');
+    background: url('../../../public/assests/footer-clock.jpg');
     background-size: contain;
     background-repeat: no-repeat;
 }

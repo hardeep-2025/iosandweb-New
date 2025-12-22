@@ -1,6 +1,6 @@
 import "./SubHeading.css";
 
-const star = `${process.env.REACT_APP_API_URL}/assests/images/star.png`;
+const star = `${process.env.REACT_APP_API_URL}/assests/star.png`;
 
 const SubHeading = ({text}) => {
     return(

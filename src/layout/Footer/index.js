@@ -6,18 +6,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AnalogClock from "analog-clock-react";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 
-const footerBg = `${process.env.REACT_APP_API_URL}/assests/images/footer_bg.webp`;
+const footerBg = `${process.env.REACT_APP_API_URL}/assests/footer_bg.webp`;
 
-const logoWhite = `${process.env.REACT_APP_API_URL}/assests/images/IAW-logo-white.png`;
-const india = `${process.env.REACT_APP_API_URL}/assests/images/hq-india.svg`;
-const hqUk = `${process.env.REACT_APP_API_URL}/assests/images/hq-uk.png`;
-const hqUs = `${process.env.REACT_APP_API_URL}/assests/images/hq-us.svg`;
+const logoWhite = `${process.env.REACT_APP_API_URL}/assests/IAW-logo-white.png`;
+const india = `${process.env.REACT_APP_API_URL}/assests/hq-india.svg`;
+const hqUk = `${process.env.REACT_APP_API_URL}/assests/hq-uk.png`;
+const hqUs = `${process.env.REACT_APP_API_URL}/assests/hq-us.svg`;
 
-const facebook = `${process.env.REACT_APP_API_URL}/assests/images/facebook.png`;
-const twitter = `${process.env.REACT_APP_API_URL}/assests/images/twitter.png`;
-const instagram = `${process.env.REACT_APP_API_URL}/assests/images/instagram.png`;
-const linkedin = `${process.env.REACT_APP_API_URL}/assests/images/linkedin.png`;
-const whatsapp = `${process.env.REACT_APP_API_URL}/assests/images/whatsapp.png`;
+const facebook = `${process.env.REACT_APP_API_URL}/assests/facebook.png`;
+const twitter = `${process.env.REACT_APP_API_URL}/assests/twitter.png`;
+const instagram = `${process.env.REACT_APP_API_URL}/assests/instagram.png`;
+const linkedin = `${process.env.REACT_APP_API_URL}/assests/linkedin.png`;
+const whatsapp = `${process.env.REACT_APP_API_URL}/assests/whatsapp.png`;
 
 const socialLinks = [
     {

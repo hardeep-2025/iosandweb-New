@@ -10,8 +10,8 @@ import SEO from "../../components/SEO";
 
 import { useLocation } from "react-router-dom";
 
-const blogImage = `${process.env.REACT_APP_API_URL}/assests/images/blog-banner.webp`;
-const defaultImage = `${process.env.REACT_APP_API_URL}/assests/images/placeholder-image.webp`;
+const blogImage = `${process.env.REACT_APP_API_URL}/assests/blog-banner.webp`;
+const defaultImage = `${process.env.REACT_APP_API_URL}/assests/placeholder-image.webp`;
 
 function Blog(){
 
