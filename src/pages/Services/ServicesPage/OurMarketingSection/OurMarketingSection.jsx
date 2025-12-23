@@ -1,0 +1,51 @@
+import "./OurMarketingSection.css";
+import { Col, Container, Row } from "react-bootstrap";
+
+const marketingLists = [
+    {
+        title: "Research",
+        text: "Deep Dive into competitors and Market Trends",
+    },
+    {
+        title: "Targeting",
+        text: "Identifying your ideal Customer Persona",
+    },
+    {
+        title: "Execution",
+        text: "Launching campaigns Across chosen channels",
+    },
+    {
+        title: "Analysis",
+        text: "Monitoring data and performance metrics",
+    },
+    {
+        title: "Refinement",
+        text: "Monitoring data and performance metrics",
+    }
+]
+
+const OurMarketingSection = () => {
+    return(
+        <div className="services_our_marketing_section body-background">
+            <Container>
+                <Row>
+                    <Col>
+                        <h2 className="heading_main text-center">Our Marketing Strategy</h2>
+                        <p className="paragraph_content text-center">We Dont Guess. We Calculate</p>
+                        <div className="our_marketing_grids less-top-padding">
+                            {marketingLists.map((item,i) => (
+                                <div className="our_marketing_item" key={i}>
+                                    <div className="our_marketing_numbers">{i+1}</div>
+                                    <p className="paragraph_content">{item.title}</p>
+                                    <p className="our_marketing_text">{item.text}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+    )
+}
+
+export default OurMarketingSection

@@ -6,7 +6,6 @@ import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import NoPage from './pages/NoPage';
-import Services from './pages/Services';
 import BlogDetails from './pages/BlogDetails';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
@@ -41,6 +40,7 @@ import SEOServicePeterborough from './pages/Services/SEOService/SEOServicePeterb
 import DigitalMarketingBristol from './pages/Services/DigitalMarketing/DigitalMarketingBristol';
 import { useEffect } from 'react';
 import Home from './pages/Home/Home';
+import ServicesPage from './pages/Services/ServicesPage/ServicesPage';
 
 const useRedirect = (targetUrl) => {
   const navigate = useNavigate();
@@ -97,7 +97,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:url" element={<BlogDetails />} />
           <Route path='/contact-us' element={<Contact />} />
-          <Route path='/services' element={<Services />} />
+          <Route path='/services' element={<ServicesPage />} />
           <Route path='/privacy' element={<PrivacyPolicy />} />
           <Route path='/terms-and-conditions' element={<TermsConditions />} />
           <Route path='/cancellation-policy' element={< CancellationPolicy />} />
