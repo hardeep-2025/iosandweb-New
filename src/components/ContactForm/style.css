@@ -1,9 +1,31 @@
 /* contact form */
+
 .contact-form {
-    padding: 30px;
-    border-radius: 20px;
-    background: #fff;
-    color: #000;
+    background: rgb(109 103 103 / 35%);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sunHeading{
+    font-family: "Poppins-SemiBold";
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(97, 94, 94, 1);
+
+}
+.formHeadingDiv {
+    font-family: "Poppins-SemiBold";
+    font-size: 25px;
+    line-height: 29px;
+    color: white;
+}.flagDiv {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
 }
 .contact-form .form-group {
     padding-bottom: 10px;
@@ -11,11 +33,22 @@
 .contact-form .form-group .form-control {
     padding: 0.8rem;
     border: none;
-    border-bottom: 1px solid #797d7e;
-    border-radius: unset;
+
     outline: none !important;
     box-shadow: none !important;
+    background: rgba(12, 12, 12, 0.43);
+    border-radius: 13px;
 }
+input#phoneValue {
+    /* background: rgba(12, 12, 12, 0.43); */
+    background: transparent;
+    color: white;
+}
+.contact-form .form-control::placeholder {
+    color: white !important;
+    opacity: 1; /* Essential for Firefox */
+}
+
 .contact-form .form-group.form-submit-group {
     padding: 10px 0;
 }
@@ -29,8 +62,15 @@
 .contact-form .form-group .message {
     padding-top: 10px;
 }
+.fullWidth {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    text-align: center !important;
+}
 @media (max-width: 991px) {
     .contact-form {
       margin-top: 50px;
     }
+    
 }

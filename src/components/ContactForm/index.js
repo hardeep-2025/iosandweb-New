@@ -6,6 +6,11 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import 'react-phone-number-input/style.css';
 import PhoneInput, {isPossiblePhoneNumber} from "react-phone-number-input";
 import axios from "axios";
+const usa = `${process.env.REACT_APP_API_URL}/assests/contactUs/contactForm/usa.png`;
+const india = `${process.env.REACT_APP_API_URL}/assests/contactUs/contactForm/india.png`;
+const uk = `${process.env.REACT_APP_API_URL}/assests/contactUs/contactForm/uk.png`;
+const star = `${process.env.REACT_APP_API_URL}/assests/contactUs/contactForm/star.png`;
+
 
 function ContactForm(){
     const [formerrors, setFormErrors] = useState({});
@@ -118,7 +123,12 @@ function ContactForm(){
             <div className="contact-form">
                 <Form className="contactForm" id="contactForm" onSubmit={handleSubmit}>
                     <Form.Group controlId="yourName" className="form-group">
-                        {/* <Form.Label>Name</Form.Label> */}
+                        <Form.Label className="formHeadingDiv"> Share Details & Begin
+                            <div className="subPartOfHeading">
+                             <div className="sunHeading"><img src={star} alt=""/>Our Presence</div>
+                             <div className="flagDiv"><img src={india} alt=""/><img src={usa} alt=""/><img src={uk} alt=""/></div>
+                            </div>
+                             </Form.Label>
                         <Form.Control type="text" placeholder="Name" value={values.yourName} name="yourName" onChange={handleChange}  />
                         {formerrors.yourName && (
                             <p className="text-danger">{formerrors.yourName}</p>
@@ -150,11 +160,11 @@ function ContactForm(){
                         <Form.Control as="textarea" rows={4} name="yourMessage" placeholder="Message or Questions" value={values.yourMessage} onChange={handleChange} />
                     </Form.Group>
                     <Form.Group className="form-group form-submit-group">
-                        <Button type="submit" className={`form-submit-btn btn btn-blue-border ${loading ? 'disabled' : null }`}> 
+                        <Button type="submit" className={`btn-gradient-blue fullWidth ${loading ? 'disabled' : null }`}> 
                         {
                             loading ?
                             <>
-                                Sending 
+                                Send Enquiry
                                 <Spinner as="span" animation="border" size="sm" role="status" aria-hidden="true" />
                             </>
                             : 

@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
-import Contact from './pages/Contact';
+// import Contact from './pages/Contact';
 import NoPage from './pages/NoPage';
 import BlogDetails from './pages/BlogDetails';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -41,6 +41,7 @@ import DigitalMarketingBristol from './pages/Services/DigitalMarketing/DigitalMa
 import { useEffect } from 'react';
 import Home from './pages/Home/Home';
 import ServicesPage from './pages/Services/ServicesPage/ServicesPage';
+import ContactUs from './pages/Contact/ContactUs';
 
 const useRedirect = (targetUrl) => {
   const navigate = useNavigate();
@@ -96,7 +97,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:url" element={<BlogDetails />} />
-          <Route path='/contact-us' element={<Contact />} />
+          <Route path='/contact-us' element={<ContactUs />} />
           <Route path='/services' element={<ServicesPage />} />
           <Route path='/privacy' element={<PrivacyPolicy />} />
           <Route path='/terms-and-conditions' element={<TermsConditions />} />
